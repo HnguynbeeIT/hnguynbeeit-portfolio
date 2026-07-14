@@ -23,9 +23,9 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "Nguyen Ngoc Ha Nguyen",
+  author: "HnBeeIT-Portfolio",
   email: "hnguynbee.hng@gmail.com",
-  site: "https://hnbeeit-portfolio.netlify.app", 
+  site: "https://hnguynbeeit-portfolio.netlify.app", 
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
