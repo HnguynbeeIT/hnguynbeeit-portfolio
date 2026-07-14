@@ -23,7 +23,7 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "HnBeeIT-Portfolio",
+  author: "Nguyen Ngoc Ha Nguyen",
   email: "hnguynbee.hng@gmail.com",
   site: "https://hnguynbeeit-portfolio.netlify.app", 
 
