@@ -230,6 +230,8 @@ const PROJECT_SKILLS = {
     icon: <SiSupabase />,
   },
 };
+// ... (giữ nguyên toàn bộ phần import và PROJECT_SKILLS ở phía trên nhé) ...
+
 export type Project = {
   id: string;
   category: string;
@@ -241,134 +243,18 @@ export type Project = {
   github?: string;
   live: string;
 };
+
 const projects: Project[] = [
+  /*.
+
   {
     id: "basospark",
     category: "Social network",
-    title: "Baso Spark (Social Network)",
+    title: "HnBe (Social Network)",
     src: "/assets/projects-screenshots/basospark/landing.png",
-    screenshots: ["landing.png"],
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.next,
-        PROJECT_SKILLS.tailwind,
-        PROJECT_SKILLS.reactQuery,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-        PROJECT_SKILLS.nest,
-        PROJECT_SKILLS.prisma,
-        PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.sockerio,
-      ],
-    },
-    live: "",
-    github: "https://github.com/BDuong31/Baso-Spark.git",
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            Baso Spark - Connect, Share, and Spark Conversations!
-          </TypographyP>
-          <TypographyP className="font-mono ">
-            Baso Spark is a dynamic social networking platform designed to bring
-            people together. Whether you&apos;re looking to share your thoughts,
-            connect with friends, or discover new interests, Baso Spark has got
-            you covered.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Auth </TypographyH3>
-          <p className="font-mono mb-2">
-            Securely sign up and log in using email or social media accounts.
-            Your data is protected with industry-standard encryption.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Register.png`,
-              `${BASE_PATH}/basospark/Login.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Home </TypographyH3>
-          <p className="font-mono mb-2">
-            Stay updated with a personalized feed of posts from your friends
-            and communities you follow.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Home.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Notifications </TypographyH3>
+    // ... (đoạn code chi tiết của dự án) ...
+  }
+  */
+]
 
-          <p className="font-mono mb-2">
-            Stay informed with real-time notifications for likes, comments, and
-            new followers.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Notification.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Messages </TypographyH3>
-          <p className="font-mono mb-2">
-            Connect with friends through instant messaging and group chats.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/basospark/Message.png`]} />
-          <TypographyH3 className="my-4 mt-8">Bookmarks </TypographyH3>
-          <p className="font-mono mb-2">
-            Save your favorite posts and access them anytime from your
-            bookmarks.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/basospark/Bookmark.png`]} />
-          <TypographyH3 className="my-4 mt-8">Explore </TypographyH3>
-
-          <p className="font-mono mb-2">
-            Discover new content, trending topics, and communities tailored to
-            your interests.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Explore.png`,
-            ]}
-          />
-
-          <TypographyH3 className="my-4 mt-8">Profile </TypographyH3>
-          <p className="font-mono mb-2">
-            Customize your profile, share your story, and showcase your posts
-            and achievements.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Profile.png`,
-            ]}
-          />
-
-          <TypographyH3 className="my-4 mt-8">Follow </TypographyH3>
-          <p className="font-mono mb-2">
-            Connect with friends and influencers by following their profiles to
-            see their latest updates.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Followers.png`,
-              `${BASE_PATH}/basospark/Following.png`,
-            ]}
-          />
-
-          <TypographyH3 className="my-4 mt-8">Settings </TypographyH3>
-          <p className="font-mono mb-2">
-            Manage your account settings, privacy preferences, and notification
-            preferences.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/basospark/Setting.png`,
-            ]}
-          />
-        </div>
-      );
-    },
-  },
-];
 export default projects;
